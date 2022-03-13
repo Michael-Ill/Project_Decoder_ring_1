@@ -12,7 +12,7 @@ const caesarModule = (function () {
     if (!encode) shift *= -1;
     
 
-    return input
+    let result = input
       .toLowerCase()
       .split("")
       .map((letter) => {
@@ -24,6 +24,7 @@ const caesarModule = (function () {
         return String.fromCharCode(shiftNum);
       })
       .join("");
+      return result
   }
 
   return {

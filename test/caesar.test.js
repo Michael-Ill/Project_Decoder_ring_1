@@ -27,7 +27,7 @@ describe('Caesar Shift test', () => {
         expect(actual).to.equal(expected) 
      })
 
-     it(`(BPQA qa I amkzmb umaaiom!, 8) should be: this is a secret message!`, () => {
+     it(`(BPQA qa I amkzmb umaaiom!, 8, false) should be: this is a secret message!`, () => {
         let actual = caesar("BPQA qa I amkzmb umaaiom!", 8, false)
         let expected = 'this is a secret message!'
         expect(actual).to.equal(expected) 

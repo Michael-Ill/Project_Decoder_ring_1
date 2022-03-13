@@ -35,13 +35,13 @@ describe('Substitution Test', () => {
 
     it(`(thinkful, short) should be: false`, () => {
         let actual = substitution("thinkful", "short")
-        let expected = "false"
+        let expected = false
         expect(actual).to.equal(expected)
     })
 
     it(`(thinkful, abcabcabcabcabcabcabcabcyz) should be: false`, () => {
         let actual = substitution("thinkful", "abcabcabcabcabcabcabcabcyz")
-        let expected = "false"
+        let expected = false
         expect(actual).to.equal(expected)
     })
 })
