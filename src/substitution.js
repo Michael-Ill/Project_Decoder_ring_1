@@ -14,12 +14,12 @@ const substitutionModule = (function () {
     let substitution = {}
     let decode = {}
     let result = ""
-    //loop each letter 
+    //loop each letter in input
     myAlphabet.split("").forEach((letter, index) => {
       substitution[letter] = alphabet[index]
       decode[alphabet[index]] = letter
     })
-    //if decode --> reverse
+    //if decode --> reverse 
     if (!encode) substitution = decode
     input.split("").forEach(input => {
       result += input === " " ? " " : substitution[input]
