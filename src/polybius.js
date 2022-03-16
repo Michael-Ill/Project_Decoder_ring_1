@@ -18,9 +18,11 @@ const polybiusModule = (function () {
     }
   
     if (encode) {
-      return input.split("").map(letter => {
+      let result = input.split("").map(letter => {
         return alphabet[letter.toLowerCase()]
-      }).join("")
+      })
+      console.log({result})
+      return result.join("")
     } else {
       if(input.replace(/\s/g,"").length %2 !== 0) return false
       return input.match(/[0-9]{2}|\s/g).map(number => {

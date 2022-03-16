@@ -21,6 +21,11 @@ const caesarModule = (function () {
         if (shiftNum > 122) {
           shiftNum = 96 + (shiftNum - 122);
         }
+        if (shiftNum < 97) {
+          let start = 97 - letter.charCodeAt(0)
+          let fromEnd = 123 - (start - shift)
+          shiftNum = fromEnd;
+        }
         return String.fromCharCode(shiftNum);
       })
       .join("");
