@@ -1,4 +1,3 @@
-// Write your tests here!
 const {polybius} = require('../src/polybius.js')
 const expect = require('chai').expect
 
